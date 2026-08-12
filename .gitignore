@@ -1,0 +1,41 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Node
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Coverage / tooling
+coverage/
+.nyc_output/
+
+# Locally-rendered documentation artefacts
+# (Only .md source is committed; .html and .pdf are build outputs from the
+# _build_pdf.py script in the sibling cadenza-labs internal repo.)
+PATENTS.html
+PATENTS.pdf
+README.html
+README.pdf
+CONTRIBUTING.html
+CONTRIBUTING.pdf

@@ -1,0 +1,56 @@
+{
+  "name": "@cadenza/sdk",
+  "version": "0.1.0",
+  "description": "Covenant kernel beneath any agent-payment protocol, any settlement stablecoin, any covenant-capable chain. Reference implementation (AP2 shipped; x402, MPP, MCP, A2A, AEP2 scaffolded). MIT-licensed. Patent Pending — see PATENTS.md.",
+  "keywords": [
+    "cadenza",
+    "covenant",
+    "agent-payments",
+    "settlement",
+    "stablecoin",
+    "ap2",
+    "x402",
+    "mpp",
+    "mcp",
+    "a2a",
+    "aep2",
+    "kaspa",
+    "utxo"
+  ],
+  "author": "Cadenza Agentic Solutions Inc. (Delaware; d/b/a Cadenza Labs; interim licensor pending assignment: Gitche Gumee Investment Corporation, Nevada)",
+  "license": "MIT",
+  "homepage": "https://cadenzalabs.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CadenzaLabs-io/cadenza-poc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CadenzaLabs-io/cadenza-poc/issues"
+  },
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "demo": "tsx src/cli.ts",
+    "demo:seven": "tsx examples/seven-lines.ts",
+    "demo:tampered": "tsx examples/with-tampering.ts",
+    "demo:streaming": "tsx examples/streaming-llm.ts",
+    "testnet:wallet": "tsx examples/generate-testnet-wallet.ts",
+    "testnet:smoke": "tsx examples/testnet-smoke.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/websocket": "^1.0.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@onekeyfe/kaspa-wasm": "^1.0.3-alpha.1",
+    "websocket": "^1.0.35"
+  },
+  "allowScripts": {
+    "bufferutil@4.1.0": true,
+    "utf-8-validate@5.0.10": true
+  }
+}
